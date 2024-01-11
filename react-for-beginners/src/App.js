@@ -6,10 +6,8 @@ export const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/hello">
-          <h1>Hello</h1>
-        </Route>
-        <Route path="/movie" element={<Detail />} />
+        <Route path="/hello" element={<h1>Hello</h1>} />
+        <Route path="/movie/:id" element={<Detail />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
